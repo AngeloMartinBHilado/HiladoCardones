@@ -3,4 +3,5 @@
 <channel>
 <title>Dota 2</title>
 
-<link><link rel="alternate" type="application/rss+xml" title="Dota 2 &raquo; Feed" href="http://blog.dota2.com/feed/" />
+<link><link rel="alternate" type="application/rss+xml" title="Dota 2 &raquo; Feed" href="http://blog.dota2.com/feed/" /></link>
+  </channel>
