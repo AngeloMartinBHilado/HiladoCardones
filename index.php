@@ -15,7 +15,7 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
                           <ul class="nav-menu">
                             <li> <a href="index.php?navigation=home"> HOME </a> </li>
                             <li> <a href="index.php?navigation=technology"> TECHNOLOGY  </a> </li>
-                            <li> <a href="index.php?navigation=movies"> MOVIES  </a> </li>
+                            <li> <a href="index.php?navigation=Games"> MOVIES  </a> </li>
                             <li> <a href="index.php?navigation=sports"> SPORTS  </a> </li>
                             <li> <a href="index.php?navigation=entertainment"> ENTERTAINMENT  </a> </li>
                             <li> <a href="index.php?navigation=contact"> CONTACT US </a> </li>
@@ -28,8 +28,8 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
                             case 'technology':
                             require_once 'technology.php';
                             break;
-                            case 'movies':
-                            require_once 'rss.php';
+                            case 'Games':
+                            require_once 'Games.php';
                             break;
                             case 'sports':
                             require_once 'sports.php';
