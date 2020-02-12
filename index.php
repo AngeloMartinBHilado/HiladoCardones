@@ -29,7 +29,7 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
                             require_once 'technology.php';
                             break;
                             case 'movies':
-                            require_once 'movies.php';
+                            require_once 'rss.php';
                             break;
                             case 'sports':
                             require_once 'sports.php';
