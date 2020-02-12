@@ -29,7 +29,6 @@ foreach( $content as $data )
                                 <ul class="article-content">
                                    <li> <?php echo $image; ?></li>
                                   <li> <b> Link: </b> <br><a href="<?php echo $link;?>" target="blank"> <?php echo $link;?>  </a> </li>
-                                  <li> <b> Published Date: </b><br> <?php echo $pubDate ?></li>
                                   <li> <b>Creator: </b><br> <?php echo $dc ?></li>
                                  
                                 </li>
