@@ -8,7 +8,8 @@
    <div class="font-title"> <div class="index">COLLEGE MOVIE NEWS </div></div>
 
 <?php
-
+foreach( $content as $data )
+ {
    $title = $data->getElementsByTagName("title")->item(0)->nodeValue;
    $link = $data->getElementsByTagName("link")->item(0)->nodeValue;
    $description = $data->getElementsByTagName("description")->item(0)->nodeValue;
@@ -36,7 +37,9 @@
                                 <div class="article-description"> <?php echo $description; ?> </div> <br/>
                             </li>
                 </div>
- 
+  <?php
+ }
+?>
 
 </body>
 </html>
