@@ -15,7 +15,7 @@ foreach( $content as $data )
    $description = $data->getElementsByTagName("description")->item(0)->nodeValue;
    $image= $data->getElementsByTagName("image")->item(0)->nodeValue;
    $pubDate = $data->getElementsByTagName("dc:date")->item(0)->nodeValue;
-   $Creator = $data->getElementsByTagName("dc:creator")->item(0)->nodeValue;
+   $dc = $data->getElementsByTagName("dc:creator")->item(0)->nodeValue;
    ?>
 
     <html>
@@ -30,7 +30,7 @@ foreach( $content as $data )
                                    <li> <?php echo $image; ?></li>
                                   <li> <b> Link: </b> <br><a href="<?php echo $link;?>" target="blank"> <?php echo $link;?>  </a> </li>
                                   <li> <b> Published Date: </b><br> <?php echo $pubDate ?></li>
-                                  <li> <b>Creator: </b><br> <?php echo $Creator ?></li>
+                                  <li> <b>Creator: </b><br> <?php echo $dc ?></li>
                                  
                                 </li>
                                 </ul>
