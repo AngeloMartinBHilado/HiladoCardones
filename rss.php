@@ -1,20 +1,45 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<?php
+ $domOBJ = new DOMDocument();
+ $domOBJ->load("https://www.metacritic.com/rss/movies");//XML page URL
 
-<channel>
-  <title>W3Schools Home Page</title>
-  <link>https://www.w3schools.com</link>
-  <description>Free web building tutorials</description>
-  <item>
-    <title>RSS Tutorial</title>
-    <link>https://www.w3schools.com/xml/xml_rss.asp</link>
-    <description>New RSS tutorial on W3Schools</description>
-  </item>
-  <item>
-    <title>XML Tutorial</title>
-    <link>https://www.w3schools.com/xml</link>
-    <description>New XML tutorial on W3Schools</description>
-  </item>
-</channel>
+ $content = $domOBJ->getElementsByTagName("item");
+?>
+    <br/> <br/>
+   <div class="font-title"> <div class="index">COLLEGE MOVIE NEWS </div></div>
 
-</rss>
+<?php
+ foreach( $content as $data )
+ {
+   $title = $data->getElementsByTagName("title")->item(0)->nodeValue;
+   $link = $data->getElementsByTagName("link")->item(0)->nodeValue;
+   $description = $data->getElementsByTagName("description")->item(0)->nodeValue;
+   $category = $data->getElementsByTagName("category")->item(0)->nodeValue;
+   $pubDate = $data->getElementsByTagName("pubDate")->item(0)->nodeValue;
+
+   ?>
+
+    <html>
+    <head> <title> Movies | M&L </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:800i|Oswald|Teko:600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+                  <div class="whole-article">
+                    <div class="article-title"> <u><?php echo $title;?></u></div>
+                                <ul class="article-content">
+                                  <li> <b> Link: </b> <br><a href="<?php echo $link;?>" target="blank"> <?php echo $link;?>  </a> </li>
+                                  <li> <b> Published Date: </b><br> <?php echo $pubDate ?></li>
+                                  <li> <b> Category: </b> <br><?php echo $category; ?></li>
+
+                                </li>
+                                </ul>
+                                <hr>
+                                <div class="article-description"> <?php echo $description; ?> </div> <br/>
+                            </li>
+                </div>
+ <?php
+ }
+?>
+
+</body>
+</html>
