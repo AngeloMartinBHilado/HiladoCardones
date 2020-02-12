@@ -21,7 +21,7 @@ foreach( $content as $data )
     <html>
     <head> <title> Movies | M&L </title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Kanit:800i|Oswald|Teko:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
                   <div class="whole-article">
