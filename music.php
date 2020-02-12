@@ -27,7 +27,6 @@ foreach( $content as $data )
                   <div class="whole-article">
                     <div class="article-title"> <u><?php echo $title;?></u></div>
                                 <ul class="article-content">
-                                   <li> <?php echo $image; ?></li>
                                   <li> <b> Link: </b> <br><a href="<?php echo $link;?>" target="blank"> <?php echo $link;?>  </a> </li>
                                   <li> <b>Creator: </b><br> <?php echo $dc ?></li>
                                  
