@@ -19,7 +19,7 @@ foreach( $content as $data )
    ?>
 
     <html>
-    <head> <title> Movies | M&L </title>
+    <head> <title> Games For You </title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
