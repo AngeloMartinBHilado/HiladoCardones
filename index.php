@@ -14,31 +14,24 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
                         <div class="nav">
                           <ul class="nav-menu">
                             <li> <a href="index.php?navigation=home"> HOME </a> </li>
-                            <li> <a href="index.php?navigation=technology"> TECHNOLOGY  </a> </li>
                             <li> <a href="index.php?navigation=Games"> GAMES </a> </li>
                             <li> <a href="index.php?navigation=Music"> MUSIC  </a> </li>
-                            <li> <a href="index.php?navigation=entertainment"> ENTERTAINMENT  </a> </li>
-                            <li> <a href="index.php?navigation=contact"> CONTACT US </a> </li>
+                            <li> <a href="index.php?navigation=tvshows"> TV SHOWS </a> </li>
+                     
                           </ul>
                         </div>
 
                         <div class="content">
                         <?php
-                        switch($navigation){
-                            case 'technology':
-                            require_once 'technology.php';
-                            break;
+                        switch($navigation){           
                             case 'Games':
                             require_once 'Games.php';
                             break;
                             case 'Music':
                             require_once 'music.php';
                             break;
-                            case 'entertainment':
-                            require_once 'entertainment.php';
-                            break;
-                            case 'contact':
-                            require_once 'contact.php';
+                            case 'tvshows':
+                            require_once 'tvshows.php';
                             break;
                             default:
                             require_once 'home.php';
@@ -48,7 +41,7 @@ $navigation = (isset($_GET['navigation']) && $_GET['navigation'] != '') ? $_GET[
                         </div>
 
                         <div id="footer">
-                        <div class="index"> <div class="font-title"> M&L </div> | College News </div>
+                        <div class="index"> <div class="font-title"> RELAX AND LIVE A LITTLE! </div></div>
                         </div>
     </div>
     </body>
