@@ -1,6 +1,6 @@
 <?php
  $domOBJ = new DOMDocument();
- $domOBJ->load("https://www.metacritic.com/rss/movies");//XML page URL
+ $domOBJ->load("https://www.metacritic.com/rss/games/pc");//XML page URL
 
  $content = $domOBJ->getElementsByTagName("item");
 ?>
