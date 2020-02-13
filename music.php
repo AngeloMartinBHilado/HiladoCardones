@@ -14,7 +14,7 @@ foreach( $content as $data )
    $link = $data->getElementsByTagName("link")->item(0)->nodeValue;
    $description = $data->getElementsByTagName("description")->item(0)->nodeValue;
    $image= $data->getElementsByTagName("image")->item(0)->nodeValue;
-   $pubDate = $data->getElementsByTagName("dc:date")->item(0)->nodeValue;
+   $dc:date = $data->getElementsByTagName("dc:date")->item(0)->nodeValue;
    $dc = $data->getElementsByTagName("dc:creator")->item(0)->nodeValue;
    ?>
 
@@ -27,8 +27,8 @@ foreach( $content as $data )
                   <div class="whole-article">
                     <div class="article-title"> <u><?php echo $title;?></u></div>
                                 <ul class="article-content">
-                                  <li> <b> Link: </b> <br><a href="<?php echo $link;?>" target="blank"> <?php echo $link;?>  </a> </li>
-                                  <li> <b>Creator: </b><br> <?php echo $dc ?></li>
+                                  <a href="<?php echo $link;?>" target="blank"> <?php echo $link;?>  </a>
+                                  <b>Date: </b><br> <?php echo $dc:date ?><br/>
                                  
                                 </li>
                                 </ul>
