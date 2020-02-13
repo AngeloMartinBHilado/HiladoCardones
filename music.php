@@ -5,7 +5,7 @@
  $content = $domOBJ->getElementsByTagName("item");
 ?>
     <br/> <br/>
-   <div class="font-title"> <div class="index">Games For You </div></div>
+   <div class="fonttitle"> <div class="index">Games For You </div></div>
 
 <?php
 foreach( $content as $data )
@@ -24,8 +24,8 @@ foreach( $content as $data )
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
-                  <div class="whole-article">
-                    <div class="article-title"> <u><?php echo $title;?></u></div>
+                  <div class="wholeart">
+                    <div class="arttitle"> <u><?php echo $title;?></u></div>
                                 <ul class="artcontent">
                                   <a href="<?php echo $link;?>" target="blank"> <?php echo $link;?>  </a>
                                   <b>Date: </b><br> <?php echo $dc:date ?><br/>
