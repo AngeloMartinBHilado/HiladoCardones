@@ -27,13 +27,13 @@ foreach( $content as $data )
                   <div class="wholeart">
                     <div class="arttitle"> <u><?php echo $title;?></u></div>
                                 <ul class="artcontent">
-                                  <a href="<?php echo $link;?>" target="blank"> <?php echo $link;?>  </a>
-                                  <b>Date: </b><br> <?php echo $dc:date ?><br/>
+                                 <li> <a href="<?php echo $link;?>" target="blank"> <?php echo $link;?>  </a></li>
+                                 <li> <b>Date: </b><br> <?php echo $dc:date ?><br/> </li>
                                  
-                                </li>
+                     
                                 </ul>
                                 <hr>
-                                <div class="article-description"> <?php echo $description; ?> </div> <br/>
+                               <li> <div class="article-description"> <?php echo $description; ?> </div> <br/>
                             </li>
                 </div>
   <?php
